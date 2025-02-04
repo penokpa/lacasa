@@ -16,7 +16,18 @@ type Props = {
 const SectionBgImage = ({ bgImage, title, description, as = "h1" }: Props) => {
   return (
     <StyledDiv className="section-image-wrapper" $bgImage={bgImage}>
-      this is section background image
+      <div className="our-story-title">
+                <Typography as="h2" className="section-title">
+                 About Us
+      
+                </Typography>
+                <div className="background-image-container">
+                  <Typography as="p" className="motto">
+                    Not just a trend | A tradition since 1967
+                  </Typography>
+                </div>
+        </div>
+
       {/* <Overlay />
       <Container fluid>
         <Row>
