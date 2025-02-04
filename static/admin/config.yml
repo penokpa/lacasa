@@ -1,0 +1,461 @@
+backend:
+  name: github
+  repo: rodinshrestha/everest-cotati
+  branch: main
+
+publish_mode: editorial_workflow
+media_folder: "static/uploads"
+public_folder: /uploads
+
+collections:
+  - name: "soup_salad"
+    label: "Soup and Salad"
+    folder: "/content/kitchen_menu/soup_salad"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+      - {
+          label: "Food Type",
+          name: "food_type",
+          widget: "select",
+          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
+          multiple: true,
+          required: false,
+        }
+
+  - name: "appetizer"
+    label: "Appetizer"
+    folder: "/content/kitchen_menu/appetizer"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+      - {
+          label: "Food Type",
+          name: "food_type",
+          widget: "select",
+          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
+          multiple: true,
+          required: false,
+        }
+
+  - name: "tikka_masala"
+    label: "Tikka Masala"
+    folder: "/content/kitchen_menu/tikka_masala"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+      - {
+          label: "Food Type",
+          name: "food_type",
+          widget: "select",
+          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
+          multiple: true,
+          required: false,
+        }
+
+  - name: "naan_side_item"
+    label: "Naan Side Items"
+    folder: "/content/kitchen_menu/naan_sides_item"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+      - {
+          label: "Food Type",
+          name: "food_type",
+          widget: "select",
+          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
+          multiple: true,
+          required: false,
+        }
+
+  - name: "momo"
+    label: "MoMo"
+    folder: "/content/kitchen_menu/momo"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+      - {
+          label: "Food Type",
+          name: "food_type",
+          widget: "select",
+          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
+          multiple: true,
+          required: false,
+        }
+
+  - name: "vegetable_tarkari_curries"
+    label: "Vegetable Tarkari(Vegetable Curries)"
+    folder: "/content/kitchen_menu/vegetable_tarkari_curries"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+      - {
+          label: "Food Type",
+          name: "food_type",
+          widget: "select",
+          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
+          multiple: true,
+          required: false,
+        }
+
+  - name: "chicken_curries"
+    label: "Chicken Curries"
+    folder: "/content/kitchen_menu/chicken_curries"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+      - {
+          label: "Food Type",
+          name: "food_type",
+          widget: "select",
+          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
+          multiple: true,
+          required: false,
+        }
+
+  - name: "lamb_curries"
+    label: "Lamb Curries"
+    folder: "/content/kitchen_menu/lamb_curries"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+      - {
+          label: "Food Type",
+          name: "food_type",
+          widget: "select",
+          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
+          multiple: true,
+          required: false,
+          default: "",
+        }
+
+  - name: "seafood_curries"
+    label: "Sea Food Curries"
+    folder: "/content/kitchen_menu/seafood_curries"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+      - {
+          label: "Food Type",
+          name: "food_type",
+          widget: "select",
+          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
+          multiple: true,
+          required: false,
+          default: "",
+        }
+
+  - name: "biryani"
+    label: "Biryani"
+    folder: "/content/kitchen_menu/biryani"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+      - {
+          label: "Food Type",
+          name: "food_type",
+          widget: "select",
+          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
+          multiple: true,
+          required: false,
+          default: "",
+        }
+
+  - name: "add_vegetable_or_meat"
+    label: "Add Vegetable Or Meat"
+    folder: "/content/kitchen_menu/add_vegetable_or_meat"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+      - {
+          label: "Food Type",
+          name: "food_type",
+          widget: "select",
+          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
+          multiple: true,
+          required: false,
+          default: "",
+        }
+
+  - name: "tandoori"
+    label: "Tandoori"
+    folder: "/content/kitchen_menu/tandoori"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+      - {
+          label: "Food Type",
+          name: "food_type",
+          widget: "select",
+          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
+          multiple: true,
+          required: false,
+          default: "",
+        }
+
+  - name: "non-alcholic-beverages"
+    label: "Non Alcholic Beverages"
+    folder: "/content/kitchen_menu/non-alcholic-beverages"
+    create: true
+    slug: "{{name}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Price", name: "price", widget: "string" }
+      - {
+          label: "Food Type",
+          name: "food_type",
+          widget: "select",
+          options: ["box", "vegan", "made here", "leaf", "kids", "new"],
+          multiple: true,
+          required: false,
+          default: "",
+        }
+
+  #######################
+  # Website Settings
+  #######################
+
+  - name: "settings"
+    label: "Settings"
+    files:
+      # Website Settings
+      - label: "Website Settings"
+        name: "website_settings"
+        file: "content/settings/settings.json"
+        fields:
+          - label: "Site Logo"
+            name: "site_logo"
+            widget: "image"
+
+          - label: "title logo"
+            name: "title_logo"
+            widget: image
+
+          - label: "Hero Banner Image"
+            name: "hero_banner_image"
+            widget: image
+
+          - label: "Youtube Video ID"
+            name: "video_id"
+            widget: string
+
+          - label: "Footer Text"
+            name: "footer_text"
+            widget: "string"
+
+          - label: "Phone Number"
+            name: "phone_number"
+            widget: "string"
+
+          - label: "Email"
+            name: "email"
+            widget: "string"
+
+          - label: "Lunch Time"
+            name: "lunch_time"
+            widget: "string"
+
+          - label: "Dinner Time"
+            name: "dinner_time"
+            widget: "string"
+
+          - label: "Oppening Information"
+            name: "open_information"
+            widget: "string"
+
+          - label: "Oneline Order URL"
+            name: "order_online_url"
+            widget: "string"
+
+          - label: "Menu Service Charge Description"
+            name: "menu_service_charge_description"
+            widget: "string"
+
+          - label: "Story Sub Description"
+            name: "story_sub_description"
+            widget: "string"
+
+          - label: "Story"
+            name: "story_content"
+            widget: "markdown"
+
+          - label: "Google Map Latitude"
+            name: "map_latitude"
+            widget: "string"
+
+          - label: "Google Map Longitude"
+            name: "map_longitude"
+            widget: "string"
+
+          - label: "Google Map Zoom Level"
+            name: "map_zoom_level"
+            widget: "string"
+
+      # Kitchen Menu Settings
+      - label: "Kitchen Menu Helper"
+        name: "kitchen_menu_helper"
+        file: "content/settings/kitchen_menu_helper.json"
+        fields:
+          - label: "Vegetable Tarkari Curry Description"
+            name: "vegetable_tarkari_curry_description"
+            widget: "string"
+
+          - label: "Tikka Masala Description"
+            name: "tikka_masala_description"
+            widget: "string"
+
+          - label: "Appetizer Description"
+            name: "appetizer_description"
+            widget: "string"
+
+          - label: "Chicken Curry Description"
+            name: "chicken_curry_description"
+            widget: "string"
+
+          - label: "Lamb Curry Description"
+            name: "lamb_curry_description"
+            widget: "string"
+
+          - label: "Seafood Curry Description"
+            name: "seafood_curry_description"
+            widget: "string"
+
+          - label: "Add Vegetable Or Meat Description"
+            name: "add_vegetable_or_meat_description"
+            widget: "string"
+
+          - label: "Naan Sides Item Description"
+            name: "naan_side_item_description"
+            widget: "string"
+
+          - label: "Momo Description"
+            name: "momo_description"
+            widget: "string"
+
+          - label: "Starter Salad Description"
+            name: "starter_salad_description"
+            widget: "string"
+
+          - label: "Tandoori Description"
+            name: "tandoori_description"
+            widget: "text"
+
+          - label: "Biryani Description"
+            name: "biryani_description"
+            widget: "string"
+
+          - label: "Non Alcholic Beverage Description"
+            name: "non_beverages_alcholic_description"
+            widget: "string"
+
+  # #######################
+  # Page SEO
+  # #######################
+
+  - name: "search-engine-optimization"
+    label: "Search Engine Optimization(SEO)"
+    files:
+      # Home Page SEO
+      - label: Home Page SEO
+        name: home-page-seo
+        file: "content/seo/home-page-seo.json"
+        fields:
+          - label: "Seo Title"
+            name: "seo_title"
+            widget: "string"
+
+          - label: "Meta Description"
+            name: "meta_description"
+            widget: "string"
+
+          - label: "Meta Keywords"
+            name: "meta_keywords"
+            widget: "string"
+
+      # Contact us SEO
+      - label: Contact US SEO
+        name: contact-us-seo
+        file: "content/seo/contact-us-seo.json"
+        fields:
+          - label: "Seo Title"
+            name: "seo_title"
+            widget: "string"
+
+          - label: "Meta Description"
+            name: "meta_description"
+            widget: "string"
+
+          - label: "Meta Keywords"
+            name: "meta_keywords"
+            widget: "string"
+
+      # Gallery Page SEO
+      - label: Gallery Page SEO
+        name: gallery-page-seo
+        file: "content/seo/gallery-page-seo.json"
+        fields:
+          - label: "Seo Title"
+            name: "seo_title"
+            widget: "string"
+
+          - label: "Meta Description"
+            name: "meta_description"
+            widget: "string"
+
+          - label: "Meta Keywords"
+            name: "meta_keywords"
+            widget: "string"
+
+      # Menu Page SEO
+      - label: Menu Page SEO
+        name: menu-page-seo
+        file: "content/seo/menu-page-seo.json"
+        fields:
+          - label: "Seo Title"
+            name: "seo_title"
+            widget: "string"
+
+          - label: "Meta Description"
+            name: "meta_description"
+            widget: "string"
+
+          - label: "Meta Keywords"
+            name: "meta_keywords"
+            widget: "string"
