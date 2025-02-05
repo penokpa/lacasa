@@ -28,7 +28,11 @@ export const StyledDiv = styled.div`
 
     .header-wrapper {
       display: flex;
-      justify-content: space-between;
+      justify-content:flex-start;
+      list-style:none;
+      padding:0;
+      margin:0;
+      
       height: 90px;
 
       @media (max-width: ${theme.breakPoints.md}) {
